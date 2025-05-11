@@ -1,7 +1,6 @@
 const GLib = imports.gi.GLib;
 const Gio = imports.gi.Gio; // Needed for file infos
 //const Util = imports.misc.util;
-const Lang = imports.lang;
 const Signals = imports.signals;
 const Cinnamon = imports.gi.Cinnamon;
 const Util = require("./lib/util");
@@ -28,7 +27,8 @@ var LOCAL_DATA = {
       "temps": {},
       "fans": {},
       "voltages": {},
-      "intrusions": {}
+      "intrusions": {},
+      "currents": {}
     };
 /**
  * Class SensorsReaper
@@ -57,7 +57,8 @@ class SensorsReaper {
       "temps": {},
       "fans": {},
       "voltages": {},
-      "intrusions": {}
+      "intrusions": {},
+      "currents": {}
     };
     this.isRunning = false;
   }
@@ -78,7 +79,7 @@ class SensorsReaper {
         this.sensors_command = this.sensors_program + " -u";
         this.sensors_is_json_compatible = false;
         let command = "%s -v".format(this.sensors_program);
-        let subProcess = Util.spawnCommandLineAsyncIO(command, Lang.bind(this, function(stdout, stderr, exitCode) {
+        let subProcess = Util.spawnCommandLineAsyncIO(command, (stdout, stderr, exitCode) => {
           if (exitCode === 0) {
             let output = stdout;
             if (typeof stdout === "object") output = to_string(stdout);
@@ -86,7 +87,7 @@ class SensorsReaper {
             this.applet.sensors_version = sensors_version;
           }
           subProcess.send_signal(9);
-        }));
+        });
       }
       return this.sensors_command;
     } else {
@@ -111,7 +112,7 @@ class SensorsReaper {
     if (this.nvidia_smi_program) {
       let command = `${this.nvidia_smi_program} --version`;
       let subProcess = Util.spawnCommandLineAsyncIO(command,
-        Lang.bind(this, function (stdout, stderr, exitCode) {
+        (stdout, stderr, exitCode) => {
           if (exitCode === 0) {
             let output = stdout;
             if (typeof stdout === "object")
@@ -129,7 +130,7 @@ class SensorsReaper {
             }
             // Test the command because Nvidia doesn't guarantee backwards compatability
             let testProcess = Util.spawnCommandLineAsyncIO(this.nvidia_smi_command,
-              Lang.bind(this, function (stdout, stderr, exitCode) {
+              (stdout, stderr, exitCode) => {
                 if (exitCode != 0) {
                   global.logError(`Nvidia SMI call failed with code ${exitCode}: ${stdout}, ${stderr}`)
                   global.log(`Incompatible Nvidia SMI: ${this.nvidia_smi_program} v${this.nvidia_smi_version} `);
@@ -140,12 +141,10 @@ class SensorsReaper {
                   global.log(`Nvidia SMI v${this.nvidia_smi_version} command: ${this.nvidia_smi_command}`);
                 }
                 testProcess.send_signal(9);
-              })
-            );
+              });
             subProcess.send_signal(9);
           }
-        })
-      );
+        });
 
       return this.nvidia_smi_command;
     } else {
@@ -162,7 +161,7 @@ class SensorsReaper {
     //if (this.in_fahrenheit)
       //command += "f"; // The -f option of sensors is full of bugs !!!
     if (this.sensors_command != undefined) {
-      let subProcess = Util.spawnCommandLineAsyncIO(this.sensors_command, Lang.bind (this, function(stdout, stderr, exitCode) {
+      let subProcess = Util.spawnCommandLineAsyncIO(this.sensors_command, (stdout, stderr, exitCode) => {
         if (exitCode === 0) {
           if (this.sensors_is_json_compatible)
             this._sensors_reaped(stdout);
@@ -171,14 +170,14 @@ class SensorsReaper {
         }
         //Util.unref(subProcess);
         subProcess.send_signal(9);
-      }));
+      });
     }
 
   }
 
   reap_nvidia_smi() {
     if (this.nvidia_smi_command != undefined) {
-      let subProcess = Util.spawnCommandLineAsyncIO(this.nvidia_smi_command, Lang.bind(this, function (stdout, stderr, exitCode) {
+      let subProcess = Util.spawnCommandLineAsyncIO(this.nvidia_smi_command, (stdout, stderr, exitCode) => {
         if (exitCode === 0) {
           let results = {};
 
@@ -201,7 +200,7 @@ class SensorsReaper {
           global.logError(`Nvidia SMI call failed with code ${exitCode}: ${stdout}, ${stderr}`);
         }
         subProcess.send_signal(9);
-      }));
+      });
     }
   }
 
@@ -302,7 +301,7 @@ class SensorsReaper {
           if (subfeat.startsWith("fan")) {
             if  (type_of_feature === "" &&
                 (!this.hide_zero_fan ||
-                  (subfeat.endsWith("input") && this.raw_data[chip][feature][subfeat] > 0)
+                  (subfeat.endsWith("input") && this.raw_data[chip][feature][subfeat] >= 0)
                 )
             ) {
               type_of_feature = "fans";
@@ -327,6 +326,16 @@ class SensorsReaper {
             ) {
               type_of_feature = "voltages";
             }
+          } else if (subfeat.startsWith("curr")) {
+            if  (type_of_feature === "" &&
+                (!this.hide_zero_voltage ||
+                  (subfeat.endsWith("input") && this.raw_data[chip][feature][subfeat] > 0)
+                )
+            ) {
+              type_of_feature = "currents";
+            }
+          } else {
+            continue
           }
           feature_dico[subfeature_name] = this.raw_data[chip][feature][subfeat];
         }

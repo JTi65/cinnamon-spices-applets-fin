@@ -1,15 +1,15 @@
 # BAZI TANIMLAYICI BAŞLIK.
 # Telif hakkı (C) 2022 PAKETİN TELİF HAKKI SAHİBİ Radio3.0
 # Bu dosya Radio3.0 paketi ile aynı lisans altında dağıtılmaktadır..
-# Serkan Önder <serkanonder@outlook.com>, 2022.2023.
+# Serkan Önder <serkanonder@outlook.com>, 2022.2023.2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Radio3.0 v1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-applets/"
 "issues\n"
-"POT-Creation-Date: 2024-12-12 22:53+0100\n"
-"PO-Revision-Date: 2023-12-17 14:38+0300\n"
+"POT-Creation-Date: 2025-04-03 08:57+0200\n"
+"PO-Revision-Date: 2025-01-13 12:14+0300\n"
 "Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
 "Language-Team: \n"
 "Language: tr\n"
@@ -17,29 +17,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#. applet.js:238
+#. applet.js:286
 msgid "unassigned"
-msgstr ""
+msgstr "atanmamış"
 
-#. applet.js:336
+#. applet.js:287
+msgid "Display Album Art at full size"
+msgstr "Albüm Kapağını tam boyutta görüntüle"
+
+#. applet.js:391
 msgid "This is your own list of Categories and Radio Stations."
 msgstr "Bu, kendi Kategoriler ve Radyo İstasyonları listenizdir."
 
-#. applet.js:337
+#. applet.js:392
 msgid "You can add more using the [+] button."
 msgstr "[+] düğmesini kullanarak daha fazlasını ekleyebilirsiniz."
 
-#. applet.js:338
+#. applet.js:393
 msgid "For a category, fill in only its name; leave the other fields empty."
 msgstr "Bir kategori için yalnızca adını girin; diğer alanları boş bırakın."
 
-#. applet.js:339
+#. applet.js:394
 msgid "For a radio station, enter only its name and its streaming URL."
 msgstr "Bir radyo istasyonu için yalnızca adını ve akış URL'sini girin."
 
-#. applet.js:340
+#. applet.js:395
 msgid ""
 "You can order the rows by dragging and dropping or by using the buttons and "
 "tools below the list."
@@ -47,7 +51,7 @@ msgstr ""
 "Satırları sürükleyip bırakarak veya listenin altındaki butonları ve araçları "
 "kullanarak sıralayabilirsiniz."
 
-#. applet.js:341
+#. applet.js:396
 msgid ""
 "The buttons on the right below the list allow you to navigate page by page "
 "or category by category."
@@ -55,7 +59,7 @@ msgstr ""
 "Listenin sağ altında bulunan düğmeler, sayfa sayfa veya kategori kategori "
 "gezinmenizi sağlar."
 
-#. applet.js:342
+#. applet.js:397
 msgid ""
 "To search for one of your stations, click on the list and start writing its "
 "name."
@@ -63,7 +67,7 @@ msgstr ""
 "İstasyonlarınızdan birini aramak için listeye tıklayın ve adını yazmaya "
 "başlayın."
 
-#. applet.js:343
+#. applet.js:398
 msgid ""
 "To easily add stations to your list, use the following 2 tabs: Search and "
 "Import."
@@ -71,13 +75,13 @@ msgstr ""
 "İstasyonları listenize kolayca eklemek için şu 2 sekmeyi kullanın: Ara ve "
 "İçe Aktar."
 
-#. applet.js:344
+#. applet.js:399
 msgid "Check its 'Menu' box to display a station or category in the menu."
 msgstr ""
 "Menüde bir istasyonu veya kategoriyi görüntülemek için 'Menü' kutusunu "
 "işaretleyin."
 
-#. applet.js:345
+#. applet.js:400
 msgid ""
 "Check its '♪/➟' box to listen to the station or move it to another category "
 "using the tools below the list."
@@ -85,12 +89,12 @@ msgstr ""
 "İstasyonu dinlemek veya listenin altındaki araçları kullanarak başka bir "
 "kategoriye taşımak için '♪/➟' kutusunu işaretleyin."
 
-#. applet.js:347
+#. applet.js:402
 msgid "You can have your list of stations checked by internet databases."
 msgstr ""
 "İstasyon listenizi internet veri tabanlarından kontrol ettirebilirsiniz."
 
-#. applet.js:348
+#. applet.js:403
 msgid ""
 "Any station recognized by one of these databases will receive a Universal "
 "Unique Identifier (UUID) provided by this database."
@@ -99,7 +103,7 @@ msgstr ""
 "veritabanı tarafından sağlanan bir Evrensel Benzersiz Tanımlayıcı (UUID) "
 "alacaktır."
 
-#. applet.js:349
+#. applet.js:404
 msgid ""
 "So, if a streaming URL was changed, a next check would update it and you can "
 "continue to listen to the affected station."
@@ -107,7 +111,7 @@ msgstr ""
 "Dolayısıyla, bir akış URL'si değiştirilmişse, bir sonraki kontrol URL'yi "
 "günceller ve etkilenen istasyonu dinlemeye devam edebilirsiniz."
 
-#. applet.js:351
+#. applet.js:406
 msgid ""
 "Here you can search for other stations in a free radio database accessible "
 "via the Internet."
@@ -115,7 +119,7 @@ msgstr ""
 "Burada, İnternet üzerinden erişilebilen ücretsiz bir radyo veri tabanındaki "
 "diğer istasyonları arayabilirsiniz."
 
-#. applet.js:352
+#. applet.js:407
 msgid ""
 "Fill in at least a few fields of the form below then click on the "
 "'Search ...' button."
@@ -123,7 +127,7 @@ msgstr ""
 "Aşağıdaki formun en az birkaç alanını doldurun ve ardından 'Ara ...' "
 "düğmesine tıklayın."
 
-#. applet.js:353
+#. applet.js:408
 msgid ""
 "Each time this button is clicked, a new results page is displayed in the "
 "second part of this page, where you can test certain stations and include "
@@ -133,7 +137,7 @@ msgstr ""
 "istasyonları test edebileceğiniz ve menüye ekleyebileceğiniz yeni bir sonuç "
 "sayfası görüntülenir."
 
-#. applet.js:354
+#. applet.js:409
 msgid ""
 "A station already in your menu will only appear in search results if its "
 "streaming URL has changed."
@@ -141,7 +145,7 @@ msgstr ""
 "Zaten menünüzde bulunan bir istasyon, yalnızca akış URL'si değiştiyse arama "
 "sonuçlarında görünecektir."
 
-#. applet.js:355
+#. applet.js:410
 msgid ""
 "When no new page appears, it means that all results matching your search "
 "criteria have been displayed."
@@ -149,7 +153,7 @@ msgstr ""
 "Yeni bir sayfanın görünmemesi, arama kriterlerinize uyan tüm sonuçların "
 "görüntülendiği anlamına gelir."
 
-#. applet.js:357
+#. applet.js:412
 msgid ""
 "You can import a file containing the name and streaming URL of at least one "
 "radio station."
@@ -157,7 +161,7 @@ msgstr ""
 "En az bir radyo istasyonunun adını ve akış URL'sini içeren bir dosyayı içe "
 "aktarabilirsiniz."
 
-#. applet.js:358
+#. applet.js:413
 msgid ""
 "These radio stations are displayed in the list below. You can test them by "
 "checking their ♪ box."
@@ -165,32 +169,60 @@ msgstr ""
 "Bu radyo istasyonları aşağıdaki listede gösterilmektedir. ♪ kutularını "
 "işaretleyerek onları test edebilirsiniz."
 
-#. applet.js:359
+#. applet.js:414
 msgid "Then manage this list with the buttons at the bottom of this tab."
 msgstr "Ardından bu sekmenin altında bulunan butonlar ile bu listeyi yönetin."
 
-#. applet.js:361
+#. applet.js:416
 msgid ""
 "In the Shoutcast directory, click the download button to the left of the "
 "station name."
 msgstr ""
 "Shoutcast dizininde, istasyon adının solundaki indirme düğmesine tıklayın."
 
-#. applet.js:362
+#. applet.js:417
 msgid ""
 "Select the open format (.XSPF) and save the file giving it the same name as "
 "the station."
 msgstr ""
 "Açık biçimi (.XSPF) seçin ve dosyayı istasyonla aynı adı vererek kaydedin."
 
-#. applet.js:363
+#. applet.js:418
 msgid "This file can then be imported here."
 msgstr "Bu dosya daha sonra buraya aktarılabilir."
 
-#. applet.js:365
+#. applet.js:420
 #, javascript-format
 msgid "%s bytes = %s GB = %s GiB"
 msgstr "%s bayt = %s GB = %s GiB"
+
+#. applet.js:422
+msgid "Sun."
+msgstr ""
+
+#. applet.js:422
+msgid "Mon."
+msgstr ""
+
+#. applet.js:422
+msgid "Tue."
+msgstr ""
+
+#. applet.js:422
+msgid "Wed."
+msgstr ""
+
+#. applet.js:422
+msgid "Thu."
+msgstr ""
+
+#. applet.js:422
+msgid "Fri."
+msgstr ""
+
+#. applet.js:422
+msgid "Sat."
+msgstr ""
 
 #. settings-schema.json->category-to-move->options
 #. settings-schema.json->volume-at-startup->options
@@ -198,334 +230,396 @@ msgstr "%s bayt = %s GB = %s GiB"
 #. settings-schema.json->search-country->options
 #. settings-schema.json->search-codec->options
 #. settings-schema.json->search-order->options
-#. applet.js:531 applet.js:545 applet.js:5202 applet.js:5214
+#. settings-schema.json->alarm-clock-working-days-radio->options
+#. settings-schema.json->alarm-clock-workoff-days-radio->options
+#. applet.js:588 applet.js:604 applet.js:6010 applet.js:6026
 msgid "(Undefined)"
 msgstr "(Tanımsız)"
 
-#. applet.js:743
-msgid "Radio3.0 web page..."
-msgstr "Radyo3.0 web sayfası..."
-
-#. applet.js:2089
+#. applet.js:2417
 msgid "Start"
 msgstr "Başlat"
 
-#. applet.js:2097 applet.js:2826
+#. applet.js:2425 applet.js:3303
 msgid "Stop"
 msgstr "Durdur"
 
-#. applet.js:2332 applet.js:2368 applet.js:2415
-msgid "Middle-Click: Stop Recording"
-msgstr "Orta Tıklama: Kaydı Durdur"
-
-#. applet.js:2364 applet.js:2411
+#. applet.js:2733
 msgid "Volume: %s%"
 msgstr "Ses düzeyi: %s%"
 
-#. applet.js:2370 applet.js:2417
+#. applet.js:2738
+msgid "Middle-Click: Stop Recording"
+msgstr "Orta Tıklama: Kaydı Durdur"
+
+#. applet.js:2740
 msgid "Middle-click: ON/OFF"
 msgstr "Orta tıklama: AÇIK/KAPALI"
 
-#. applet.js:2372 applet.js:2419
+#. applet.js:2742
 msgid "Click: Select another station"
 msgstr "Tıklayın: Başka bir istasyon seçin"
 
-#. applet.js:2385
-msgid "Click to select a station"
-msgstr "Bir istasyon seçmek için tıklayın"
-
-#. applet.js:2421
+#. applet.js:2744
 msgid "Scroll wheel: volume change"
 msgstr "Kaydırma tekerleği: ses değişikliği"
 
-#. applet.js:2496 applet.js:2844 applet.js:4777
+#. applet.js:2747
+msgid "Click to select a station"
+msgstr "Bir istasyon seçmek için tıklayın"
+
+#. applet.js:2753
+msgid "Wake Up"
+msgstr ""
+
+#. applet.js:2831 applet.js:3321 applet.js:5347
 msgid "Configure..."
 msgstr "Yapılandır..."
 
-#. applet.js:2500 applet.js:2836
+#. applet.js:2835 applet.js:3313
 msgid "Search for new stations..."
 msgstr "Yeni istasyonlar arayın..."
 
-#. applet.js:2506 applet.js:2848 applet.js:4906
+#. applet.js:2841
+#, fuzzy
+msgid "Load a sample station list"
+msgstr "Bu istasyon listesini güncelle"
+
+#. applet.js:2884 applet.js:3325 applet.js:5417
 msgid "Sound Settings"
 msgstr "Ses Ayarları"
 
-#. applet.js:2576
+#. applet.js:2960
 msgid "Watch on YT"
 msgstr "YT'de izle"
 
-#. applet.js:2583
+#. applet.js:2967
 msgid "Try to download it from YT (unsafe)"
 msgstr "YT'den indirmeyi deneyin (güvenli değil)"
 
-#. applet.js:2646
+#. applet.js:3030
 msgid "Recently Played Stations:"
 msgstr "Son Oynatılan İstasyonlar:"
 
-#. applet.js:2688
+#. applet.js:3072
 msgid "Visit the home page of this station"
 msgstr "Bu istasyonun ana sayfasını ziyaret edin"
 
-#. applet.js:2727
-#, fuzzy
+#. applet.js:3134
 msgid "Categories"
-msgstr "Kategorilerim"
+msgstr "Kategoriler"
 
-#. applet.js:2729
-#, fuzzy
+#. applet.js:3137
 msgid "Radio Stations"
-msgstr "Radyo İstasyonlarım"
+msgstr "Radyo İstasyonları"
 
-#. applet.js:2739
-#, fuzzy
+#. applet.js:3148
 msgid "All Categories"
-msgstr "Kategorilerim"
+msgstr "Tüm Kategoriler"
 
-#. applet.js:2769
+#. applet.js:3245
 msgid "My Radio Stations"
 msgstr "Radyo İstasyonlarım"
 
-#. applet.js:2968
+#. applet.js:3445
 msgid "Downloading..."
 msgstr "İndiriliyor..."
 
-#. applet.js:2970
+#. applet.js:3447
 msgid "Stop downloading"
 msgstr "İndirmeyi durdur"
 
-#. applet.js:3074
+#. applet.js:3551
 msgid "Download complete"
 msgstr "İndirme tamamlandı"
 
 #. settings-schema.json->button-open-rec-folder->description
 #. settings-schema.json->recordings-open-folder->description
-#. applet.js:3076 applet.js:3085 applet.js:4529 applet.js:4538 applet.js:4547
-#. applet.js:4832
+#. applet.js:3553 applet.js:3562 applet.js:5066 applet.js:5075 applet.js:5084
+#. applet.js:5380
 msgid "Open the recordings folder"
 msgstr "Kayıtlar klasörünü aç"
 
-#. applet.js:3083 applet.js:4526 applet.js:4536 applet.js:4545
+#. applet.js:3560 applet.js:5063 applet.js:5073 applet.js:5082
 msgid "An error seems to have occurred during recording!"
 msgstr "Kayıt sırasında bir hata oluşmuş gibi görünüyor!"
 
-#. applet.js:3084 applet.js:4528 applet.js:4537 applet.js:4546
+#. applet.js:3561 applet.js:5065 applet.js:5074 applet.js:5083
 msgid "Please check this record."
 msgstr "Lütfen bu kaydı kontrol edin."
 
-#. applet.js:3191 applet.js:3225
+#. applet.js:3668 applet.js:3702
 msgid "Record from now"
 msgstr "Şu andan itibaren kaydet"
 
-#. applet.js:3209 applet.js:5108
+#. applet.js:3686 applet.js:5912
 msgid "Stop Current Recording"
 msgstr "Geçerli Kaydı Durdur"
 
-#. applet.js:3337
+#. applet.js:3819
 #, javascript-format
 msgid "Playing %s%s"
 msgstr "%s%s oynatılıyor"
 
-#. applet.js:3390
+#. applet.js:3872
 msgid "Radio OFF"
 msgstr "Radyo KAPALI"
 
-#. applet.js:3518
+#. applet.js:4000
 msgid "Unable to record anything!"
 msgstr "Hiçbir şey kaydedilemiyor!"
 
-#. applet.js:3518 applet.js:4852
+#. applet.js:4000 applet.js:5397 applet.js:5557
 msgid "Insufficient space"
 msgstr "Yetersiz alan"
 
-#. applet.js:3518
+#. applet.js:4000
 msgid "The limit you set has been reached."
 msgstr "Belirlediğiniz sınıra ulaşıldı."
 
-#. applet.js:3905
+#. applet.js:4406
 msgid "Please Log Out then Log In"
 msgstr "Lütfen Oturumu Kapatın ve Yeniden Oturum Açın"
 
-#. applet.js:3905
+#. applet.js:4406
 msgid "to finalize yt-dlp update"
 msgstr "yt-dlp güncellemesini sonlandırmak için"
 
-#. applet.js:4018
+#. applet.js:4548
 msgid "Nothing to save."
 msgstr "Kaydedilecek bir şey yok."
 
-#. applet.js:4031
+#. applet.js:4561
 msgid "List of saved radio stations"
 msgstr "Kayıtlı radyo istasyonlarının listesi"
 
-#. applet.js:4049
+#. applet.js:4579
 msgid "This will replace all current radio stations."
 msgstr "Bu, mevcut tüm radyo istasyonlarının yerini alacaktır."
 
-#. applet.js:4050
+#. applet.js:4580
 msgid "Are you sure you want to continue?"
 msgstr "Devam etmek istediğine emin misin?"
 
-#. applet.js:4110
+#. applet.js:4640
 msgid "Update in progress"
 msgstr "Güncelleme devam ediyor"
 
-#. applet.js:4110
+#. applet.js:4640
 msgid "It may take a while ... Please wait."
 msgstr "Biraz zaman alabilir... Lütfen bekleyin."
 
-#. applet.js:4200
+#. applet.js:4732
 msgid "Update completed successfully"
 msgstr "Güncelleme başarıyla tamamlandı"
 
-#. applet.js:4410 applet.js:4466
+#. applet.js:4947 applet.js:5003
 msgid "ERROR: Invalid YT video URL!"
 msgstr "HATA: Geçersiz YT video URL'si!"
 
-#. applet.js:4435
+#. applet.js:4972
 msgid "Unable to extract a single soundtrack"
 msgstr "Tek bir film müziği çıkarılamıyor"
 
-#. applet.js:4435
+#. applet.js:4972
 msgid "Maybe it's a playlist?"
 msgstr "Belki bir çalma listesidir?"
 
-#. applet.js:4468
+#. applet.js:5005
 msgid "Close"
 msgstr "Kapat"
 
-#. applet.js:4699
+#. applet.js:5166 applet.js:5637 applet.js:5655
+msgid "Cancel"
+msgstr ""
+
+#. applet.js:5167
+#, fuzzy
+msgid "Radio3.0 applet"
+msgstr "Radio3.0"
+
+#. applet.js:5170
+msgid "Enable the OSD150 extension"
+msgstr ""
+
+#. applet.js:5171
+msgid "To obtain an horizontal OSD, you need to enable the OSD150 extension."
+msgstr ""
+
+#. applet.js:5189
+msgid "Download the OSD150 extension"
+msgstr ""
+
+#. applet.js:5190
+msgid ""
+"To obtain an horizontal OSD, you need to download the OSD150 extension.\n"
+"Click on the Download button then search for OSD150 and select the ⬇ button."
+msgstr ""
+
+#. applet.js:5319
+#, javascript-format
+msgid "Remove '%s'"
+msgstr "'%s'ı kaldır"
+
+#. applet.js:5327
 msgid "About..."
 msgstr "Hakkında..."
 
-#. applet.js:4722
+#. applet.js:5334
 msgid "Manual..."
 msgstr "Klavuz..."
 
-#. applet.js:4733
-#, javascript-format
-msgid "Remove '%s'"
-msgstr "'%s'yi kaldır"
-
-#. applet.js:4759
+#. applet.js:5341
 msgid "Reload this applet"
 msgstr "Bu uygulamayı yeniden yükle"
 
-#. applet.js:4791
+#. applet.js:5358
 msgid "Schedule a background record..."
 msgstr "Bir arka plan kaydı planlayın..."
 
-#. applet.js:4803
+#. applet.js:5365
+#, fuzzy
+msgid "Configure the Alarm Clock..."
+msgstr "Yapılandır..."
+
+#. applet.js:5372
 msgid "Extract soundtrack from YouTube video..."
 msgstr "Film müziğini YouTube videosundan çıkarın..."
 
-#. applet.js:4849
+#. applet.js:5394 applet.js:5554
 msgid "(auto)"
 msgstr "(otomatik)"
 
-#. applet.js:4849
+#. applet.js:5394 applet.js:5554
 msgid "(manual)"
 msgstr "(elle)"
 
-#. applet.js:4852 applet.js:5157
+#. applet.js:5397 applet.js:5557 applet.js:5959
 msgid "Stop Recording"
 msgstr "Kaydı Durdur"
 
-#. applet.js:4852
+#. applet.js:5397 applet.js:5557
 msgid "Start Recording"
 msgstr "Kayda Başla"
 
-#. applet.js:4874
+#. applet.js:5413
 msgid "Cancel downloads from YT"
 msgstr "YOUTUBE'dan indirmeleri iptal et"
 
-#. applet.js:4915
+#. applet.js:5422
 msgid "Pulse Effects"
 msgstr "Nabız Efektleri"
 
-#. applet.js:4924
-#, fuzzy
+#. applet.js:5427
 msgid "Easy Effects"
-msgstr "Nabız Efektleri"
+msgstr "Kolay Efektler"
 
-#. applet.js:4943
+#. applet.js:5432
 msgid "Radio ON at startup"
 msgstr "Başlangıçta radyo AÇIK"
 
-#. applet.js:4957
+#. applet.js:5441
 msgid "Display Station Logo"
 msgstr "İstasyon Logosunu Göster"
 
-#. settings-schema.json->desklet-show-on-desktop->description
-#. applet.js:4972
-msgid "Show Album Art on desktop"
+#. applet.js:5451
+msgid "Album Art desklet settings"
+msgstr "Albüm Kapağı masaüstü ayarları"
+
+#. settings-schema.json->alarm-clock-wake-me-up->description
+#. applet.js:5456
+msgid "Wake me up!"
 msgstr ""
 
+#. applet.js:5466
+msgid "Show Album Art on desktop"
+msgstr "Masaüstünde Albüm Kapağını Göster"
+
 #. settings-schema.json->dont-check-dependencies->description
-#. applet.js:4987
+#. applet.js:5475
 msgid "Do not check about dependencies"
 msgstr "Bağımlılıkları kontrol etme"
 
 #. settings-schema.json->show-volume-level-near-icon->description
-#. applet.js:5002
+#. applet.js:5485
 msgid "Display volume level near icon"
 msgstr "Simgenin yanında ses seviyesini göster"
 
-#. applet.js:5158
+#. applet.js:5634
+msgid "You need the 'Album Art 3.0' desklet"
+msgstr ""
+
+#. applet.js:5635
+msgid ""
+"You can install it by clicking on the first button and then searching for "
+"Album."
+msgstr ""
+
+#. applet.js:5636 applet.js:5654
+msgid "Desklets"
+msgstr ""
+
+#. applet.js:5652
+msgid "You need to activate the 'Album Art 3.0' desklet"
+msgstr ""
+
+#. applet.js:5653
+msgid ""
+"You can activate it by clicking on the first button, then searching for "
+"Album and adding it with button [+]."
+msgstr ""
+
+#. applet.js:5960
 msgid "Close without stopping recording"
 msgstr "Kaydı durdurmadan kapatın"
 
-#. applet.js:5368
+#. applet.js:6184
 #, javascript-format
 msgid "Starting recording from %s:%s to %s:%s"
 msgstr "%s:%s'den %s:%s'ye kayıt başlatılıyor"
 
-#. applet.js:5380
+#. applet.js:6196
 msgid "Recording completed"
 msgstr "Kayıt tamamlandı"
 
-#. applet.js:5497
+#. applet.js:6313
 msgid "This will import a new file containing radio stations."
 msgstr "Bu, radyo istasyonlarını içeren yeni bir dosyayı içe aktaracaktır."
 
-#. applet.js:5498
+#. applet.js:6314
 msgid "Do you want to continue?"
 msgstr "Devam etmek istiyor musun?"
 
-#. applet.js:5569
+#. applet.js:6386
 msgid "No new radio in your list."
 msgstr "Listenizde yeni radyo yok."
 
-#. applet.js:5571
+#. applet.js:6388
 msgid "One more radio in your list."
 msgstr "Listenize bir radyo daha eklendi."
 
-#. applet.js:5573
+#. applet.js:6390
 #, javascript-format
 msgid "%s more radios in your list."
 msgstr "Listenizde %s tane daha radyo var."
 
-#. applet.js:5780
+#. applet.js:6597
 msgid "There are no new stations to add to the Radio3.0 applet menu"
 msgstr "Radio3.0 uygulama menüsüne eklenecek yeni istasyon yok"
 
-#. applet.js:5782
+#. applet.js:6599
 msgid "A new station has been added to the Radio3.0 applet menu"
 msgstr "Radio3.0 uygulama menüsüne yeni bir istasyon eklendi"
 
-#. applet.js:5784
+#. applet.js:6601
 #, javascript-format
 msgid "%s new stations have been added to the Radio3.0 applet menu"
 msgstr "Radio3.0 uygulama menüsüne %s yeni istasyon eklendi"
 
-#. applet.js:6031
+#. applet.js:6828
 #, javascript-format
 msgid "%s kbps"
 msgstr "%s kbps"
-
-#. desklet/AlbumArt3.0@claudiux/desklet.js:39
-#, fuzzy
-msgid "Radio3.0 Album Art"
-msgstr "Radio3.0"
 
 #. lib/checkDependencies.js:397
 #, javascript-format
@@ -559,7 +653,13 @@ msgstr "Çeviri kurulumunu tamamlamak için lütfen Tarçın'ı yeniden başlat�
 #. lib/util.js:245
 #, javascript-format
 msgid "Execution of '%s' failed:"
-msgstr ""
+msgstr "'%s' yürütmesi başarısız oldu:"
+
+#. settings-schema.json->scale-update->description
+#. settings-schema.json->recordings-extract-update->description
+#. lib/volumeslider.js:188
+msgid "%"
+msgstr "%"
 
 #. xs/xlet-settings.py:214
 msgid "Previous instance"
@@ -675,7 +775,7 @@ msgstr "Radyolar"
 
 #. settings-schema.json->pageImport->title
 msgid "Import"
-msgstr "İçeri aktar"
+msgstr "İçe aktar"
 
 #. settings-schema.json->pageSearch->title
 msgid "Search"
@@ -707,6 +807,10 @@ msgstr "Planlama"
 msgid "Network"
 msgstr "Ağ"
 
+#. settings-schema.json->pageAlarmClock->title
+msgid "Alarm Clock"
+msgstr ""
+
 #. settings-schema.json->sectionStationsList->title
 msgid "Stations and Categories on the menu"
 msgstr "Menüdeki İstasyonlar ve Kategoriler"
@@ -725,7 +829,7 @@ msgstr "Bu istasyon listesini güncelle"
 
 #. settings-schema.json->sectionImportRadiopp->title
 msgid "Only for Radio++ users"
-msgstr ""
+msgstr "Sadece Radio++ kullanıcıları için"
 
 #. settings-schema.json->sectionImportShoutcast->title
 msgid "Get files on Shoutcast to import here"
@@ -747,6 +851,11 @@ msgstr "Radyo İstasyonlarını Arayın"
 msgid "Search results"
 msgstr "Arama Sonuçları"
 
+#. settings-schema.json->sectionBehaviorSettingsWindow->title
+#, fuzzy
+msgid "Settings Window"
+msgstr "%s için ayarlar"
+
 #. settings-schema.json->sectionBehaviorStartUp->title
 msgid "Start-up"
 msgstr "Başlangıç"
@@ -754,6 +863,10 @@ msgstr "Başlangıç"
 #. settings-schema.json->sectionBehaviorVolumeStep->title
 msgid "Volume step"
 msgstr "Ses düzeyi"
+
+#. settings-schema.json->sectionBehaviorOSD->title
+msgid "OSD"
+msgstr ""
 
 #. settings-schema.json->sectionBehaviorTooltip->title
 msgid "Show Help"
@@ -787,11 +900,7 @@ msgstr "Simge"
 
 #. settings-schema.json->sectionBehaviorHorizontalPanel->title
 msgid "Only on horizontal panels"
-msgstr ""
-
-#. settings-schema.json->sectionBehaviorAlbumArtDesklet->title
-msgid "Album Art desklet"
-msgstr ""
+msgstr "Sadece yatay panellerde"
 
 #. settings-schema.json->sectionNetworkQuality->title
 msgid "Quality"
@@ -811,11 +920,11 @@ msgstr "Veritabanı Bilgisi"
 
 #. settings-schema.json->sectionExperimental->title
 msgid "EXPERIMENTAL"
-msgstr ""
+msgstr "DENEYSEL"
 
 #. settings-schema.json->sectionRecordingCache->title
 msgid "Cache"
-msgstr ""
+msgstr "Önbellek"
 
 #. settings-schema.json->sectionRecordingRecordings->title
 #. settings-schema.json->sectionYTFormat->title
@@ -843,6 +952,19 @@ msgstr "Bir arka plan kaydı planlanamıyor"
 msgid "Scheduled recordings"
 msgstr "Planlanmış kayıtlar"
 
+#. settings-schema.json->sectionWakeMeUp->title
+#, fuzzy
+msgid "Options"
+msgstr "Daha fazla seçenek"
+
+#. settings-schema.json->sectionWorkingDays->title
+msgid "Working Days"
+msgstr ""
+
+#. settings-schema.json->sectionWorkOffDays->title
+msgid "Work-Off Days"
+msgstr ""
+
 #. settings-schema.json->show-help-in-tabs->description
 msgid "Show help labels in each tab of this Settings window"
 msgstr "Bu Ayarlar penceresinin her sekmesinde yardım etiketlerini göster"
@@ -864,6 +986,10 @@ msgstr "Yardım"
 #. settings-schema.json->radios->description
 msgid "List of stations"
 msgstr "İstasyon listesi"
+
+#. settings-schema.json->radios->columns->title
+msgid "♥︎"
+msgstr "♥︎"
 
 #. settings-schema.json->radios->columns->title
 msgid "♪/➟"
@@ -960,14 +1086,9 @@ msgstr "Bu listeleri içeren klasörü açın"
 msgid "Update my station list with the Radio Database data"
 msgstr "İstasyon listemi Radyo Veritabanı verileriyle güncelle"
 
-#. settings-schema.json->scale-update->description
-#. settings-schema.json->recordings-extract-update->description
-msgid "%"
-msgstr "%"
-
 #. settings-schema.json->import-radiopp-button->description
 msgid "Import your stations from Radio++"
-msgstr ""
+msgstr "İstasyonlarınızı Radio++'dan içe aktarın"
 
 #. settings-schema.json->import-shoutcast-button->description
 msgid "Open the Shoutcast directory"
@@ -1037,6 +1158,16 @@ msgstr "Ülke"
 #. settings-schema.json->search-list-page-label->description
 msgid "Page:"
 msgstr "Sayfa:"
+
+#. settings-schema.json->maximize-vertically->description
+msgid "Vertical maximization"
+msgstr ""
+
+#. settings-schema.json->maximize-vertically->tooltip
+msgid ""
+"When this option is checked, this Settings Window will be maximized "
+"vertically the next time it is opened."
+msgstr ""
 
 #. settings-schema.json->switch-on-last-station-at-start-up->description
 msgid "Turn on the radio when Cinnamon starts up"
@@ -1206,7 +1337,7 @@ msgstr ""
 
 #. settings-schema.json->volume-magnetic-on->description
 msgid "Magnetize all multiples of 25%"
-msgstr ""
+msgstr "%25'in tüm katlarını mıknatısla"
 
 #. settings-schema.json->volume-show-osd->description
 msgid "Show OSD while changing volume"
@@ -1217,9 +1348,16 @@ msgid "Should OSD (On-Screen Display) be displayed when changing volume?"
 msgstr "Sesi değiştirirken OSD (Ekranda Gösterim) görüntülenmeli mi?"
 
 #. settings-schema.json->volume-show-osd-starting-radio->description
-#, fuzzy
 msgid "Show volume OSD when changing radio station"
-msgstr "Sesi değiştirirken OSD'yi göster"
+msgstr "Radyo istasyonunu değiştirirken ses OSD'sini göster"
+
+#. settings-schema.json->show-percent-char-in-osd->description
+msgid "Show '%' in OSD"
+msgstr ""
+
+#. settings-schema.json->show-horizontal-osd->description
+msgid "Show horizontal OSD"
+msgstr ""
 
 #. settings-schema.json->show-title-and-version->description
 msgid "Show the name and the version of this applet in the menu"
@@ -1280,7 +1418,7 @@ msgstr "Son Çalınan İstasyonlar listenizi şimdi boşaltın"
 
 #. settings-schema.json->show-by-category->description
 msgid "Display the Station list beside the Category list"
-msgstr ""
+msgstr "Kategori listesinin yanında İstasyon listesini görüntüle"
 
 #. settings-schema.json->show-by-category->tooltip
 msgid ""
@@ -1288,6 +1426,9 @@ msgid ""
 "Stations; then select your station.\n"
 "Unchecked: Single list containing each category followed by its stations."
 msgstr ""
+"İşaretli: İstasyonlar listesini görüntülemek için bir Kategorinin üzerine "
+"gelin (tıklamadan); ardından istasyonunuzu seçin.\n"
+"İşaretsiz: Her kategoriyi ve ardından istasyonlarını içeren tek liste."
 
 #. settings-schema.json->show-system-items->description
 msgid "Show system items in the menu"
@@ -1365,7 +1506,6 @@ msgstr ""
 "bildirmediğini unutmayın."
 
 #. settings-schema.json->notif-song-duration->units
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-delay->units
 msgid "seconds"
 msgstr "saniye"
 
@@ -1455,6 +1595,32 @@ msgstr ""
 "Mümkün olan en iyi kaliteyi elde etmek için radyonun sesi %100 olarak "
 "ayarlanacaktır."
 
+#. settings-schema.json->image-resolution->description
+msgid "Quality of downloaded Album Art"
+msgstr "İndirilen Albüm Kapağının Kalitesi"
+
+#. settings-schema.json->image-resolution->options
+msgid "Max Resolution"
+msgstr "Azami Çözünürlük"
+
+#. settings-schema.json->image-resolution->options
+msgid "High Quality"
+msgstr "Yüksek Kalite"
+
+#. settings-schema.json->image-resolution->options
+msgid "Medium"
+msgstr "Orta"
+
+#. settings-schema.json->image-resolution->options
+msgid "Standard"
+msgstr "Standart"
+
+#. settings-schema.json->image-resolution->tooltip
+msgid ""
+"Default: High Quality. Choose a value corresponding to your Network Quality."
+msgstr ""
+"Varsayılan: Yüksek Kalite. Ağ Kalitenize karşılık gelen bir değer seçin."
+
 #. settings-schema.json->network-monitoring->description
 msgid "Monitor the network"
 msgstr "Ağı izleyin"
@@ -1495,12 +1661,11 @@ msgstr "HTTP Proxy'sini uygula"
 
 #. settings-schema.json->database-favorite->description
 msgid "Your favorite database:"
-msgstr ""
+msgstr "En sevdiğiniz veritabanı:"
 
 #. settings-schema.json->database-favorite->options
-#, fuzzy
 msgid "Random"
-msgstr "rasgele"
+msgstr "Rastgele"
 
 #. settings-schema.json->database-url->description
 msgid "Database URL"
@@ -1508,25 +1673,33 @@ msgstr "Veritabanı URL'si"
 
 #. settings-schema.json->cache-no-cache->description
 msgid "No cache"
-msgstr ""
+msgstr "Önbellek yok"
 
 #. settings-schema.json->cache-no-cache->tooltip
 msgid ""
 "Checking this option limits memory usage, but no longer allows the user to "
 "rewind the cache (using the sound150@claudiux applet)."
 msgstr ""
+"Bu seçeneği işaretlemek bellek kullanımını sınırlar, ancak artık "
+"kullanıcının önbelleği geri sarmasına (sound150@claudiux uygulamasını "
+"kullanarak) izin vermez."
 
 #. settings-schema.json->cache-mins->description
 msgid ""
 "Minutes to cache\n"
 "0 means no limit (default). 1 hour = 60 minutes. 24 hours = 1440 minutes."
 msgstr ""
+"Önbelleğe alma dakikası\n"
+"0, sınır olmadığı anlamına gelir (varsayılan). 1 saat = 60 dakika. 24 saat = "
+"1440 dakika."
 
 #. settings-schema.json->cache-on-disk->description
 msgid ""
 "Cache on disk\n"
 "(Write packet data to a temporary file, instead of keeping them in memory.)"
 msgstr ""
+"Diskte önbellek\n"
+"(Paket verilerini bellekte tutmak yerine geçici bir dosyaya yazın.)"
 
 #. settings-schema.json->cache-dir->description
 msgid ""
@@ -1534,70 +1707,73 @@ msgid ""
 "(Use with caution on SSD disks. Prefer a directory stored in RAM, with "
 "sufficient free space.)"
 msgstr ""
+"Veri önbelleğe alma için kullanılan dizin\n"
+"(SSD disklerde dikkatli kullanın. RAM'de depolanan, yeterli boş alana sahip "
+"bir dizini tercih edin.)"
 
 #. settings-schema.json->cache-dir-open->description
-#, fuzzy
 msgid "Open cache directory"
-msgstr "Shoutcast dizinini aç"
+msgstr "Önbellek dizinini aç"
 
 #. settings-schema.json->cache-stream-size->description
 msgid "Stream cache size"
-msgstr ""
+msgstr "Akış önbellek boyutu"
 
 #. settings-schema.json->cache-stream-size->tooltip
 msgid ""
 "The amount of stream cache. Default: 1 MiB.\n"
 "Beware, setting this to a large value can reduce performance."
 msgstr ""
+"Akış önbelleğinin miktarı. Varsayılan: 1 MB.\n"
+"Dikkat edin, bunu büyük bir değere ayarlamak performansı düşürebilir."
 
 #. settings-schema.json->cache-stream-size->options
-#, fuzzy
 msgid "No limit"
-msgstr "Sınır"
+msgstr "Sınır Yok"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "64 KiB"
-msgstr ""
+msgstr "64 KB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "128 KiB"
-msgstr ""
+msgstr "128 KB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "256 KiB"
-msgstr ""
+msgstr "256 KB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "512 KiB"
-msgstr ""
+msgstr "512 KB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "1 MiB"
-msgstr ""
+msgstr "1 MB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "2 Mib"
-msgstr ""
+msgstr "2 MB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "3 MiB"
-msgstr ""
+msgstr "3 MB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "4 MiB"
-msgstr ""
+msgstr "4 MB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "5 MiB"
-msgstr ""
+msgstr "5 MB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "10 MiB"
-msgstr ""
+msgstr "10 MB"
 
 #. settings-schema.json->cache-stream-size->options
 msgid "20 MiB"
-msgstr ""
+msgstr "20 MB"
 
 #. settings-schema.json->recording-path->description
 msgid "Path to the folder that will contain your future recordings"
@@ -1848,6 +2024,8 @@ msgid "Extract soundtrack"
 msgstr "Film müziğini çıkar"
 
 #. settings-schema.json->sched-radio->description
+#. settings-schema.json->alarm-clock-working-days-radio->description
+#. settings-schema.json->alarm-clock-workoff-days-radio->description
 msgid "Radio"
 msgstr "Radyo"
 
@@ -3095,111 +3273,91 @@ msgid "Remove selected items"
 msgstr "Seçili öğeleri kaldır"
 
 #. settings-schema.json->horizontal-show-name->description
-#, fuzzy
 msgid "Display radio name"
-msgstr "İstasyon Logosunu Göster"
+msgstr "Radyo adını görüntüle"
 
 #. settings-schema.json->horizontal-show-title->description
-#, fuzzy
 msgid "Display title"
-msgstr "İstasyon Logosunu Göster"
+msgstr "Başlık görüntüle"
 
 #. settings-schema.json->horizontal-max-title-length->description
 msgid "Maximum title length"
-msgstr ""
+msgstr "Azami başlık uzunluğu"
 
 #. settings-schema.json->horizontal-max-title-length->tooltip
 msgid "0 means no maximum"
+msgstr "0 azami sayı olmadığı anlamına gelir"
+
+#. settings-schema.json->alarm-clock-wake-me-softly->description
+msgid "Wake me up softly"
 msgstr ""
 
-#. settings-schema.json->desklet-activate-button->description
-msgid "Activate desklet displaying the Radio3.0 Album Art"
+#. settings-schema.json->alarm-clock-wake-me-softly->tooltip
+msgid "By checking this box, the sound volume gradually increases."
 msgstr ""
 
-#. settings-schema.json->desklet-activated-label->description
-msgid "The desklet displaying the Radio3.0 Album Art is activated"
+#. settings-schema.json->alarm-clock-volume-begin->description
+msgid "Initial volume (%)"
 msgstr ""
 
-#. settings-schema.json->desklet-open-settings-button->description
-msgid "Album Art desklet settings"
+#. settings-schema.json->alarm-clock-volume-end->description
+msgid "Final volume (%)"
 msgstr ""
 
-#. desklet->AlbumArt3.0@claudiux->metadata.json->name
-msgid "Album Art for Radio3.0"
+#. settings-schema.json->alarm-clock-volume-end->tooltip
+msgid "The final volume must be greater than or equal to the initial volume."
 msgstr ""
 
-#. desklet->AlbumArt3.0@claudiux->metadata.json->description
-msgid "A digital photo frame desklet to display the Radio3.0 album art"
+#. settings-schema.json->alarm-clock-volume-transition->description
+msgid "Transition duration (seconds)"
 msgstr ""
 
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->height->description
-msgid "Height"
+#. settings-schema.json->alarm-clock-working-days->columns->title
+#. settings-schema.json->alarm-clock-workoff-days->columns->title
+msgid "Sunday"
 msgstr ""
 
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->height->units
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->width->units
-msgid "pixels"
+#. settings-schema.json->alarm-clock-working-days->columns->title
+#. settings-schema.json->alarm-clock-workoff-days->columns->title
+msgid "Monday"
 msgstr ""
 
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->width->description
-msgid "Width"
+#. settings-schema.json->alarm-clock-working-days->columns->title
+#. settings-schema.json->alarm-clock-workoff-days->columns->title
+msgid "Tuesday"
 msgstr ""
 
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-
-#. effect->description
-msgid "Fade"
+#. settings-schema.json->alarm-clock-working-days->columns->title
+#. settings-schema.json->alarm-clock-workoff-days->columns->title
+msgid "Wednesday"
 msgstr ""
 
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
+#. settings-schema.json->alarm-clock-working-days->columns->title
+#. settings-schema.json->alarm-clock-workoff-days->columns->title
+msgid "Thursday"
+msgstr ""
+
+#. settings-schema.json->alarm-clock-working-days->columns->title
+#. settings-schema.json->alarm-clock-workoff-days->columns->title
+msgid "Friday"
+msgstr ""
+
+#. settings-schema.json->alarm-clock-working-days->columns->title
+#. settings-schema.json->alarm-clock-workoff-days->columns->title
+msgid "Saturday"
+msgstr ""
+
+#. settings-schema.json->alarm-clock-working-days-time->description
+#. settings-schema.json->alarm-clock-workoff-days-time->description
+msgid "Wake-Up Time"
+msgstr ""
+
+#. settings-schema.json->alarm-clock-working-days-radio-button->description
+#. settings-schema.json->alarm-clock-workoff-days-radio-button->description
 #, fuzzy
-msgid "None"
-msgstr "(Hiçbiri)"
+msgid "Last-listened-to radio station"
+msgstr "Kayıtlı radyo istasyonlarının listesi"
 
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Quad"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Cubic"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Quart"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Quint"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Sine"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Expo"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Circ"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Elastic"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Back"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-effect->options
-msgid "Bounce"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-
-#. delay->description
-msgid "Fade delay"
-msgstr ""
-
-#. desklet->AlbumArt3.0@claudiux->settings-schema.json->fade-delay->tooltip
-msgid "0 means no fade"
+#. settings-schema.json->alarm-clock-tink-on->description
+msgid "Activate tink to ensure speakers are awake"
 msgstr ""

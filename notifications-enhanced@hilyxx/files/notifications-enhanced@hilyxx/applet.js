@@ -77,7 +77,7 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
 
     _display() {
         // Always start the applet empty, void of any notifications.
-        this.set_applet_icon_symbolic_name("empty-notif");
+        this.set_applet_icon_symbolic_name("empty-notification");
 
         // Setup the notification container.
         this._maincontainer = new St.BoxLayout({name: 'traycontainer', vertical: true});
@@ -89,15 +89,15 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
         this.menu_label = new PopupMenu.PopupMenuItem(stringify(this.notifications.length));
         this.menu_label.actor.reactive = false;
         this.menu_label.actor.can_focus = false;
-        this.menu_label.label.add_style_class_name('popup-subtitle-menu-item');
+        this.menu_label.label.add_style_class_name('popup-label-notif');
 
-        this.notDisturb_label = new PopupMenu.PopupIconMenuItem(_("Do not disturb"), "notification-disabled", St.IconType.SYMBOLIC);
-        this.notDisturb_label.label.add_style_class_name('popup-subtitle-menu-item');
+        this.notDisturb_label = new PopupMenu.PopupIconMenuItem(_("Do not disturb"), "notification-off", St.IconType.SYMBOLIC);
+        this.notDisturb_label.label.add_style_class_name('popup-label');
         this.notDisturb_label.actor.reactive = false;
         this.notDisturb_label.actor.can_focus = false;
 
-        this.noNotif_label = new PopupMenu.PopupIconMenuItem(_("No notifications"), "no-notification", St.IconType.SYMBOLIC);
-        this.noNotif_label.label.add_style_class_name('popup-subtitle-menu-item');
+        this.noNotif_label = new PopupMenu.PopupIconMenuItem(_("No notifications"), "empty-notification", St.IconType.SYMBOLIC);
+        this.noNotif_label.label.add_style_class_name('popup-label');
         this.noNotif_label.actor.reactive = false;
         this.noNotif_label.actor.can_focus = false;
 
@@ -152,6 +152,7 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
         this._maincontainer.add(this.scrollview);
         this.scrollview.add_actor(this._notificationbin);
         this.scrollview.set_policy(St.PolicyType.NEVER, St.PolicyType.AUTOMATIC);
+        this.scrollview.set_clip_to_allocation(true);
 
         let vscroll = this.scrollview.get_vscroll_bar();
         vscroll.connect('scroll-start', Lang.bind(this, function() {
@@ -238,7 +239,7 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
                     case Urgency.NORMAL:
                     case Urgency.HIGH:
                         this._blinking = false;
-                        this.set_applet_icon_symbolic_name("normal-notif");
+                        this.set_applet_icon_symbolic_name("new-notif");
                         break;
                     case Urgency.CRITICAL:
                         if (!this._blinking) {
@@ -250,7 +251,7 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
             } else {    // There are no notifications.
                 this._blinking = false;
                 this.set_applet_label('');
-                this.set_applet_icon_symbolic_name("empty-notif");
+                this.set_applet_icon_symbolic_name("empty-notification");
                 this.set_applet_tooltip(_("Notifications"));
                 this.noNotif_label.actor.show();
                 this.item_action.actor.show(); 
@@ -265,7 +266,7 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
              // "Do not disturb" icon
              if (!this.notif_settings.get_boolean("display-notifications")) {
                 this.inhibited = true;
-                this.set_applet_icon_symbolic_name("notification-disabled-symbolic");
+                this.set_applet_icon_symbolic_name("notification-off");
                 this.set_applet_tooltip(_("Notifications disabled"));
                 this.notDisturb_label.actor.show(); // Labels switch when "Do not disturb" mod is enabled
                 this.noNotif_label.actor.hide();
@@ -281,7 +282,6 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
                     
             if (!this.showNotificationCount) {  // Don't show notification count
                 this.set_applet_label('');
-                // this.clear_action.actor.hide();
             }
             this.menu_label.label.set_text(stringify(count));
             this._notificationbin.queue_relayout();
@@ -313,20 +313,17 @@ class CinnamonNotificationsApplet extends Applet.TextIconApplet {
 
      _show_hide_tray() { // Show or hide the notification tray.
         if(!global.settings.get_boolean(PANEL_EDIT_MODE_KEY)) {
-            if (this.notifications.length || this.showEmptyTray) {
+            if (this.notifications.length || this.showEmptyTray == true) {
                 this.actor.show();
-            } else {
-                this.actor.hide();
             }
+            this.update_list();
         }
     }
 
     _show_disturb_icon() { // Show disturb icon when show empty tray option is disabled.
         if(global.settings.get_boolean(PANEL_EDIT_MODE_KEY)) {
-           if (!this.showEmptyTray) {                
-                this.actor.show();
-            } else {
-                this.actor.hide();
+           if (this.showEmptyTray == true) {                
+               this.actor.show();
             }
          }
          this.update_list();
